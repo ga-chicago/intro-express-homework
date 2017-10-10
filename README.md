@@ -71,7 +71,6 @@ So that when you got to `localhost:3000`, you will see `Welcome to the Pokemon A
 ### Set up your _'database'_
 - You have created a file called `pokemon.js` inside your `models` folder.
 - Inside of this file, put the following array of pokemon objects. This is your 'database' for tonight's homework
-
 ```
 const pokemon = [ {name: "Bulbasaur", img: "http://img.pokemondb.net/artwork/bulbasaur.jpg"},
 				{name: "Ivysaur", img: "http://img.pokemondb.net/artwork/ivysaur.jpg"},
