@@ -4,9 +4,10 @@ const pokemon = require('./models/pokemon.js');
 
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
+app.use('/static', express.static('public'))
 
 app.get('/pokemon', (req, res)=>{
-	res.send(pokemon);
+	res.render('index', {pokemon});
 });
 
 
