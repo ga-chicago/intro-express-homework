@@ -10,7 +10,11 @@ app.get('/', (req, res) => {
 })
 
 app.get('/pokemon', (req, res) => {
-	res.render('index', {pokemon})
+	res.render('index', {poke: pokemon})
+})
+
+app.get('/pokemon/:id', (req, res) => {
+	res.send(req.params.id)
 })
 
 app.listen(3000, () => {
