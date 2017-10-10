@@ -12,5 +12,10 @@
 </head>
 <body>
 	<h1>See All the Pokemon</h1>
+	<ul>
+		<% pokemon.forEach(function(poke){ %>
+			<li><%=poke.name%></li>
+		<%})%>
+	</ul>
 </body>
 </html>
