@@ -5,10 +5,9 @@
     <link rel="stylesheet" media="screen" href="/static/css/style.css">
 </head>
 <body>
-<h1>Here are the pokemon:</h1>
-	<% for (i = 0; i < pokemon.length; i++) { %>
-				<img src="<%=pokemon[i].img%>" alt="">
-				<p><%=pokemon[i].name%><p>
-	<%}%>
+
+<h1>Here is <%=poke.name%>:</h1>
+<img src="<%=poke.img%>" alt="">
+
 </body>
 </html>
