@@ -11,5 +11,11 @@
 		background-color: steelblue;
 	}
 	</style>
+
+	<ul>
+		<% pokemon.forEach(function(item) { %>
+			<li> <%= item.name %></li>
+		<% }) %>
+	</ul>
 </body>
 </html>
