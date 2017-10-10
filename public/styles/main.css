@@ -3,3 +3,7 @@ body {
   background-color: #4682b4;
   font-family: 'Poiret One', cursive;
 }
+body a {
+  color: #FFEBCD;
+  text-decoration: none;
+}
