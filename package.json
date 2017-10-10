@@ -1,0 +1,19 @@
+{
+  "name": "intro-express-homework",
+  "version": "1.0.0",
+  "description": "# POKE EXPRESS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toddhersko/intro-express-homework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toddhersko/intro-express-homework/issues"
+  },
+  "homepage": "https://github.com/toddhersko/intro-express-homework#readme"
+}
