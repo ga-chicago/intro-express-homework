@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pocket Monsters</title>
+    <link rel="stylesheet" media="screen" href="/static/css/style.css">
+</head>
+<body>
+<h1>Here are the pokemon:</h1>
+	<% for (i = 0; i < pokemon.length; i++) { %>
+				<img src="<%=pokemon[i].img%>" alt="">
+				<p><%=pokemon[i].name%><p>
+	<% } %>
+</ul>
+
+</body>
+</html>
