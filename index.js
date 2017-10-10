@@ -13,7 +13,6 @@ app.get("/", (req, res) => {
 	res.send("welcome to the pokemon app");
 })
 
-
 app.get("/pokemon", (req, res) => {
 res.render('index',{pokemon});
 })
