@@ -13,9 +13,9 @@
 	</style>
 
 	<ul>
-		<% poke.forEach(function(item) { %>
-			<li> <%= item.name %> </li>
-		<% }) %>
+		<% for (let i=0; i < poke.length; i++) { %>
+			<li> <a href="/pokemon/<%=i%>"> <%= poke[i].name %> </a> </li>
+		<% }%>
 	</ul>
 </body>
 </html>
