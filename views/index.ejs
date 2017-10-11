@@ -6,10 +6,10 @@
 </head>
 <body>
 <h1>Here are the pokemon:</h1>
-	<% for (i = 0; i < pokemon.length; i++) { %>
-				<a href="http://localhost:3000/pokemon/<%=i%>">
-				<img src="<%=pokemon[i].img%>" alt="">
-				<p><%=pokemon[i].name%><p></a>
-	<%}%>
+<% for (i = 0; i < pokemon.length; i++) { %>
+	<a href="http://localhost:3000/pokemon/<%=i%>">
+	<img src="<%=pokemon[i].img%>" alt="">
+	<p><%=pokemon[i].name%><p></a>
+<%}%>
 </body>
 </html>

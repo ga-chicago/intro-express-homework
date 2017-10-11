@@ -14,11 +14,11 @@ app.get("/", (req, res) => {
 })
 
 app.get("/pokemon", (req, res) => {
-res.render('index',{pokemon});
+	res.render('index',{pokemon});
 })
 
 app.get("/pokemon/:id", (req, res) => {
-res.render('show',{poke: pokemon[req.params.id]});
+	res.render('show',{poke: pokemon[req.params.id]});
 })
 
 
