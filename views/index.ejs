@@ -5,11 +5,17 @@
 </head>
 <body>
 	<h1> See all the pokemon </h1>
+	
 	<ul>
-		<% pokemon.forEach((item) => { %>
-			<li> <%= item.name %> </li>
-		<% }) %>
+    <% for(let i=0; i<pokemon.length; i++) { %>
+        <li>
+            <a href='./<%= [i] %>'>
+                <%= pokemon[i].name %>
+            </a>
+        </li>
+    <% } %>
 	</ul>
+	
 	<style type="text/css">
 		body {
   			color: blanchedalmond;
