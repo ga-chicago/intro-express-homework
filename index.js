@@ -10,7 +10,7 @@ app.set('views', __dirname + '/views');
 // })
 
 app.get('/pokemon', (req, res) => {
-	res.render('index', {});
+	res.render('index', {pocket: pokemon});
 })
 
 app.get('', (req, res) => {
