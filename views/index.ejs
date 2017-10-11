@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<% include ../partials/head %>
+</head>
+<body>
+	<h1>See All the Pokemon!</h1>
+	<ul>
+		<% for(let i = 0; i < pokemon.length; i++){ %>
+			<a href="/pokemon/<%= i %>"><%= pokemon[i].name %><a><br>
+		<% } %>
+	</ul>
+	<a href="/pokemon/new" id="add">Add a new Pokemon!</a>
+</body>
+</html>
