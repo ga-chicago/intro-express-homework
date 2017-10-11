@@ -1,5 +1,6 @@
 const gulp = require('gulp');
 const less = require('gulp-less');
+const minify = require('gulp-minify');
 
 gulp.task('someTask', () =>{
 
@@ -16,6 +17,18 @@ gulp.task('less-css', () =>{
 
 
 });
+
+gulp.task('compress', () => {
+	gulp.src('./index.js')
+		.pipe(minify({
+			ext: {
+				src:'-debug.js',
+				min:'-minified.js'
+			},
+			exclude: ['tasks'],
+		}))
+		.pipe(gulp.dest('./public/dist'))
+})
 
 
 gulp.task('watch', () => {

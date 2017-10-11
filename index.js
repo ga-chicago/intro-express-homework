@@ -1,28 +1,23 @@
 const express = require('express');
 const app = express();
-const pokemon = require('./models/pokemon');
+const bodyParser = require('body-parser');
 
+// require controller
+const pokemonController = require('./controllers/pokemon');
+
+//tell express where are view is
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
 
+
+// parse req.body
+app.use(bodyParser.urlencoded({extended: false}));
+
+// link to public folder assets
 app.use(express.static('public'));
 
-
-
-
-
-app.get('/', (req, res) => {
-	res.send('Welcome to the Pokemon App!');
-});
-
-app.get('/pokemon', (req, res) => {
-	res.render('index', {pokemon});
-});
-
-app.get('/pokemon/:id', (req, res) => {
-	res.render('show', {pokemon: pokemon[req.params.id]});
-});
-
+// use our pokemon controller
+app.use('/', pokemonController)
 
 
 app.listen(3000, () => {
