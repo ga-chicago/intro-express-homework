@@ -28,10 +28,15 @@ app.get('/pokemon', (req, res) =>{
 
 })
 
-app.get('/pokemon/:index', (req,res)=>{
-	res.render('show',{ item: pokemon[req.params.index]});
+app.get('/pokemon/:id', (req,res)=>{
+	res.send(req.params.id)
+	res.render('show',{ poke: pokemon[req.params.id]});
+	
 })
 
+app.get('/pokemon/:id', (req,res)=>{
+	res.send(re)
+})
 
 
 app.get('/pokemon', (req, res) =>{
