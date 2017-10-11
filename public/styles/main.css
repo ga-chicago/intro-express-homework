@@ -1,9 +1,16 @@
 body {
-  color: #FFEBCD;
-  background-color: #4682b4;
+  color: blanchedalmond;
+  background-color: steelblue;
   font-family: 'Poiret One', cursive;
+  text-align: center;
+  font-weight: bold;
 }
 body a {
-  color: #FFEBCD;
+  color: blanchedalmond;
   text-decoration: none;
+  font-size: 1.5em;
+}
+#add {
+  font-size: 2em;
+  color: maroon;
 }

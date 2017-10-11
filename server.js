@@ -1,53 +1,14 @@
 const express = require('express');
 const app = express();
-const pokemon = require('./models/pokemon.js');
+const bodyParser = require('body-parser');
+const pokemonController = require('./controllers/pokemonController.js');
 
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
 app.use('/static', express.static('public'))
+app.use(bodyParser.urlencoded({extended: false}));
 
-app.get('/pokemon', (req, res)=>{
-	res.render('index', {pokemon});
-});
-
-app.get('/pokemon/:id', (req, res)=>{
-	res.render('show', {pokemon: pokemon[req.params.id]});
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+app.use('/pokemon/', pokemonController);
 
 
 
