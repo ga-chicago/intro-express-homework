@@ -14,6 +14,10 @@ app.get('/pokemon', (req, res) => {
 	res.render('index', {pokemon})
 })
 
+app.get('/pokemon/:index', (req, res) => {
+	res.send(pokemon[req.params.index])
+})
+
 app.listen(3000, () =>{
 	console.log("The server is working")
 })
