@@ -15,10 +15,12 @@ body {
 <h1>'See All The Pokemon!'</h1>
 
 <ul>
-<% pokemonIndex.forEach(function(item){ %>
-		<a href="/pokemon/x"><li><%= item.name %></li></a>
-		
-	<%})%>
+	
+		<% for(let i = 0; i < pokemon.length; i++){ %>
+			<li>
+				<a href='/pokemon/<%=i%>'><%=pokemon[i].name%></a>
+ 			</li>
+ 		<%}%>
 </ul>
 </body>
 </html>
