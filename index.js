@@ -7,8 +7,12 @@ app.set('views', __dirname + '/views')
 
 app.get('/pokemon',(req,res)=>{
 	res.render('index', {
-					pokemonIndex: pokemon
-	});  
+						pokemonIndex: pokemon
+						});  
+})
+
+app.get('/pokemon/:id',(req,res)=>{
+	res.send(req.params.id);
 })
 
 app.listen(3000, ()=>{
