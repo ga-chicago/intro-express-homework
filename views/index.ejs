@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<title></title>
+<style type="text/css">
+body {
+  color: blanchedalmond;
+  background-color: steelblue;
+  font-family: 'Indie Flower', cursive;
+}
+</style>
+</head>
+<body>
+<h1>'See All The Pokemon!'</h1>
+
+<ul>
+<% pokemonIndex.forEach(function(item){ %>
+		<li><%= item.name %></li>
+		<li><%= item.color %></li>
+
+	<%})%>
+</ul>
+</body>
+</html>
