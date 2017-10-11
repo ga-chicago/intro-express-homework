@@ -1,6 +1,10 @@
 const express = require('express');
 const app = express();
-const pokemon = require('./models/pokemon');
+const bodyParser = require('body-parser');
+
+
+
+const pokemonController = require('./controllers/pokemon');
 
 
 
@@ -9,21 +13,15 @@ app.set('views', __dirname + '/views');
 
 
 
-app.get('/', (req, res) => {
-	res.send('Welcome to the Pokemon App!');
-})
+app.use(bodyParser.urlencoded({extended: false}));
 
-app.get('/pokemon', (req, res) => {
-	res.render('index', {
-		allPokemon: pokemon
-	});
-})
 
-app.get('/pokemon/:index', (req, res) => {
-	res.render('show', {
-		allPokemon: pokemon[req.params.index]
-	});
-})
+
+app.use(express.static('public'));
+
+
+
+app.use('/pokemon', pokemonController);
 
 
 
