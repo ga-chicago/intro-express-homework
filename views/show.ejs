@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<style type="text/css">
+	body{
+		background-color: teal;
+		color: maroon;
+		font-family: 'Fascinate Inline', cursive;
+	}
+
+
+</style>
+
+<html>
+<head>
+	<% include ../views/partials/head.ejs %>
+</head>
+<body>
+	<h1>Gotta Catch 'Em All!!</h1>
+
+	<h2><%= pokemon.name%></h2>
+	<img src="<%= pokemon.img%>">
+	<a href="/pokemon">back</a>
+
+
+
+
+</body>
+</html>
