@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pocket Monsters</title>
+    <link rel="stylesheet" media="screen" href="/static/css/style.css">
+</head>
+<body>
+	<h1>edit a pokemon page</h1>
+  <form action="/pokemon/<%= index %>/edit?_method=PUT" method="POST">
+    Name: <input type="text" name="name" value="<%= pokemon.name %>">
+    image source: <input type="text" name="img" value="<%= pokemon.img %>">
+      <button type="submit">Update</button>
+  </form>
+
+</body>
+</html>

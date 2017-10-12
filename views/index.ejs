@@ -12,6 +12,11 @@
 	<a href="http://localhost:3000/pokemon/<%=i%>">
 	<img src="<%=pokemon[i].img%>" alt="">
 	<p><%=pokemon[i].name%></p></a>
+delete this pokemon from pokedex:
+    <form action="/pokemon/<%= i %>?_method=DELETE" method="POST">
+ 	<button type="submit">REMOVE</button>
+	</form>
+ 	<a href="/pokemon/<%= i %>/edit"><h3>EDIT POKEMON</h3></a>
 </div>
 <%}%>
 </body>
