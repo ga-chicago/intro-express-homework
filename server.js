@@ -1,6 +1,7 @@
 const express = require('express');
 const app     = express();
 const pokemonController = require('./controllers/pokemon')
+const methodOverride = require('method-override')
 //add create route
 //add new route
 //add to controller
@@ -36,8 +37,8 @@ app.set('views', __dirname + '/views')
 // })
 
 app.use(bodyParser.urlencoded({extended: false}));
-
-app.use('/', pokemonController)
+app.use(methodOverride('_method'));
+app.use('/', pokemonController);
 
 
 

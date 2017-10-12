@@ -3,13 +3,10 @@ const router  = express.Router();
 const pokemon  = require('../models/pokemon')
 
 router.get('/pokemon', (req, res) =>{
-	res.render('index', {
-
-					pokemon
-						
-						})
+	res.render('index', {pokemon})
 
 })
+
 router.get('/pokemon/new', (req,res)=>{
 	res.render('new', {})
 
@@ -21,20 +18,6 @@ router.get('/pokemon/:id', (req,res)=>{
 	
 })
 
-
-
-
-router.get('/pokemon', (req, res) =>{
-
-	
-})
-
-// router.get('/:index', (req, res) =>{
-// 	res.render('show',{ pokemon: pokemon[req.params.index]});
-// })
-
-
-
 router.post('/pokemon/create', (req, res)=>{
 	console.log(req.body)
 
@@ -43,6 +26,23 @@ router.post('/pokemon/create', (req, res)=>{
 
 	res.redirect('/pokemon')
 
+})
+router.get('/pokemon/:index/edit', (req, res)=>{
+	res.render('edit', {
+		pokemon: pokemon[req.params.index],
+		index: req.params.index
+	})
+
+});
+
+router.put('/pokemon/:index/edit', (req,res)=>{
+	console.log(req.body)
+	
+
+	pokemon[req.params.index] = req.body;
+	
+
+	res.redirect('/pokemon')
 })
 
 
