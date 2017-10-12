@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<% include ../views/partials/head.ejs %>
+</head>
+<body>
+	<h1>See All The Pokemon!!</h1>
+
+	<h1 id='create'><a href="/pokemon/new">Create New Pokemon</a></h1>
+
+	<ul>
+		<%for (let i = 0; i < pokemon.length; i++){%>
+	<form action="/pokemon/<%= i %>?_method=DELETE" method="POST">
+	<li><a href="/pokemon/<%= i %>"><%= pokemon[i].name%></a></li>
+		<button type="submit">Delete</button>
+	</form>
+		<a href="/pokemon/<%= i %>/edit" id='edit'>Edit</a>
+			<%}%>
+	</ul>
+
+
+
+
+</body>
+</html>

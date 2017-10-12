@@ -1,0 +1,27 @@
+body {
+  background-color: steelblue;
+  color: maroon;
+  font-family: 'Fascinate Inline', cursive;
+  text-align: center;
+  font-size: 28px;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  font-size: 22px;
+}
+a {
+  color: maroon;
+  text-decoration: none;
+}
+a:hover {
+  color: salmon;
+}
+#create {
+  font-size: 30px;
+}
+#edit {
+  font-size: 20px;
+  color: blanchedalmond;
+}
