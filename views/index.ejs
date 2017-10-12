@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel='stylesheet' href="/style/style.css">
+</head>
+<body>
+	<h1>See All the Pokemon</h1>
+	<ul>
+		<% for(let i = 0; i < pokemon.length; i++){ %>
+			<li>
+				<a href='/pokemon/<%=i%>'><%=pokemon[i].name%></a>
+			</li>
+		<%}%>
+	</ul>
+	<script type="text/javascript" src='/js/app.js'></script>
+</body>
+</html>

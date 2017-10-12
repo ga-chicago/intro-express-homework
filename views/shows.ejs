@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel='stylesheet' href="/style/style.css">
+</head>
+<body>
+	<h1>Gotta Catch 'Em All</h1>
+	<h2><%=pokemon.name%></h2>
+	<img src=<%=pokemon.img%>>
+	<a href='/pokemon'><button>Back</button></a>
+	<form action='/pokemon/<%=i%>?_method=DELETE' method='POST'>
+		<button type='submit'>Delete</button>
+	</form>
+	<form action='/pokemon/<%=i%>?_method=PUT' method='POST'>
+		Name: <input type="text" name="name" value='<%=pokemon.name%>'>
+		Image: <input type="text" name="img" value='<%=pokemon.img%>'>
+		<button type='submit'>Edit</button>
+	</form>
+</body>
+</html>

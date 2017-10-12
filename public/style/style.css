@@ -1,0 +1,15 @@
+body {
+  background-color: steelblue;
+  color: blanchedalmond;
+  font-family: 'Roboto', sans-serif;
+}
+body h1 {
+  color: red;
+}
+body a {
+  text-decoration: none;
+  display: block;
+}
+button {
+	display: block;
+}
