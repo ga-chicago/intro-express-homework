@@ -1,20 +1,67 @@
+@base: black;
+@background: steelblue;
+@wallpaper: url(https://images.freecreatives.com/wp-content/uploads/2016/03/Free-HD-Pokemon-Wallpapers.jpg);
 body {
-  color: blanchedalmond;
-  background-color: steelblue;
-  text-align: center;
+	color: blanchedalmond;
+	background: @wallpaper;
+	text-align: center;
+	img {
+		border: solid @base 10px;
+	}
+	p {
+		padding: 3px;
+	}
+	h3 {
+		background-color: @background;
+		padding: 10px;
+		margin: 20px;
+		border: solid @base 5px;
+	}
 }
-img {
-border: solid black 10px;
-animation-name: rotate;
-animation-duration: 4000ms;
-animation-iteration-count: infinite;
-animation-timing-function: linear;
+h1 {
+	background-color: @background;
+	padding: 10px;
+	margin: 20px;
+	border: solid @base 10px;
 }
 
-@keyframes rotate { 
-	from { 
-		transform: rotate(0deg); 
-	} to { 
-		transform: rotate(360deg); 
+
+.party {
+	border: solid @base 10px;
+	background-color: @background;
+	padding: 10px;
+	margin: 20px;
+	background-color: @background;
+}
+	.party:hover {
+	  transition-delay: 2s;
+	  width: 100;
+	}
+
+@keyframes rotate {
+   0%   {transform: rotate(0deg);}
+   50%  {transform: rotate(360deg);}
+   100% {transform: rotate(0deg);}
+}
+@keyframes example {
+   0%   {background-color: @background;}
+   50%  {background-color: blue;}
+   100% {background-color: @background;}
+}
+
+form {
+	background-color: @background;
+	padding: 10px;
+		border: solid @base 10px;
+	text-align: left;
+	font-size: 30px;
+	margin: 20px;
+	width: 30%;
+	input {
+	border: solid @base 10px;
+	margin: 10px;
+	padding: 10px;
+	font-size: 20px;
+
 	}
 }

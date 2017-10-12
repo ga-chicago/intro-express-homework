@@ -7,9 +7,12 @@
 <body>
 <h1>Here are the pokemon:</h1>
 <% for (i = 0; i < pokemon.length; i++) { %>
+<div class="party">
+
 	<a href="http://localhost:3000/pokemon/<%=i%>">
 	<img src="<%=pokemon[i].img%>" alt="">
-	<p><%=pokemon[i].name%><p></a>
+	<p><%=pokemon[i].name%></p></a>
+</div>
 <%}%>
 </body>
 </html>

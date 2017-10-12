@@ -1,8 +1,70 @@
 body {
   color: blanchedalmond;
-  background-color: steelblue;
+  background: url(https://images.freecreatives.com/wp-content/uploads/2016/03/Free-HD-Pokemon-Wallpapers.jpg);
   text-align: center;
 }
-img {
+body img {
   border: solid black 10px;
+}
+body p {
+  padding: 3px;
+}
+body h3 {
+  background-color: steelblue;
+  padding: 10px;
+  margin: 20px;
+  border: solid black 5px;
+}
+h1 {
+  background-color: steelblue;
+  padding: 10px;
+  margin: 20px;
+  border: solid black 10px;
+}
+.party {
+  border: solid black 10px;
+  padding: 10px;
+  margin: 20px;
+  background-color: steelblue;
+}
+.party:hover {
+  transition-delay: 2s;
+  width: 100;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes example {
+  0% {
+    background-color: steelblue;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: steelblue;
+  }
+}
+form {
+  background-color: steelblue;
+  padding: 10px;
+  border: solid black 10px;
+  text-align: left;
+  font-size: 30px;
+  margin: 20px;
+  width: 30%;
+}
+form input {
+  border: solid black 10px;
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
 }
