@@ -2,7 +2,7 @@
 <html>
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-		<style type="text/css">
+	<style type="text/css">
 		body {
   			color: blanchedalmond;
   			background-color: steelblue;
@@ -11,14 +11,12 @@
 	</style>
 </head>
 <body>
-	<h1>See All the Pokemon</h1>
-	<ul>
-		<% for(let i = 0; i < pokemon.length; i++){ %>
-			<li>
-				<a href='/pokemon/<%=i%>'><%=pokemon[i].name%></a>
-			</li>
-		<%}%>
-	</ul>
-	<script type="text/javascript" src='/js/app.js'></script>
+	<h1>WHAT'S THAT POKE'MON</h1>
+	<form action='/pokemon/create' method='POST'>
+		Name: <input type='text' name='name'>
+		Image Link: <input type="href" name="img">
+		<button type='submit'>Submit</button>
+	</form>
+
 </body>
 </html>
