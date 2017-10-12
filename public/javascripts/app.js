@@ -1,0 +1,1 @@
+console.log('this is client side js being run by the browser')
