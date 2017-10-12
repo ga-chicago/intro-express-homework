@@ -24,14 +24,13 @@ router.delete('/:index', (req, res) => {
 
 router.get('/:index/edit', (req, res) => {
   res.render('edit', {
-                      pokemon: pokemon[req.params.index],
-                      index: req.params.index
-                      })
+  pokemon: pokemon[req.params.index],
+  index: req.params.index
+  })
 });
 
 router.put('/:index/edit', (req, res) => {
   pokemon[req.params.index] = req.body;
-
   res.redirect('/pokemon')
 })
 
