@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
+const methodOverride = require('method-override')
 //add create route
 //add new route
 //add a controller
@@ -10,7 +11,7 @@ app.set('views', __dirname + '/views')
 //
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static('public'))
-
+app.use(methodOverride('_method'));
 
 app.use('/pokemon', pokemonController)
 

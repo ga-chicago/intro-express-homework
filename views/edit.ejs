@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<title></title>
+	<link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+<h1> Edit Pokemon Page</h1>
+<form action="/pokemon/create" method="POST">
+	Name: <input type="text" name="name" value="<%= pokemon.name%>">
+	Image: <input type="text" name="img" value="<%= pokemon.img %>">
+	<button type="submit">Update</button>
+</form>
+
+
+</body>
+</html>
