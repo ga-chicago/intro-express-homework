@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+	<h1>Edit Your Pokemon</h1>
+	<form action="/pokemon/<%= id%>/edit?_method=PUT" method="POST">
+		Name: <input type="text" name="name" value="<%= poke.name%>">
+		Image URL: <input type="text" name="img" value="<%= poke.img%>">
+		<button type="submit">UPDATE</button>
+	</form>
+	
+</body>
+</html>

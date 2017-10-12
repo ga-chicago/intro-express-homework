@@ -6,16 +6,16 @@
 </head>
 <body>
 	<h1>See All The Pokemon</h1>
-	<style type="text/css">
-	body {
-		color: white;
-		background-color: steelblue;
-	}
-	</style>
 
 	<ul>
 		<% for (let i=0; i < poke.length; i++) { %>
+			<div id="break">
 			<li> <a href="/pokemon/<%=i%>"> <%= poke[i].name %> </a> </li>
+			<form action="/pokemon/<%= i%>?_method=DELETE" method="POST">
+				<button type="submit">DELETE</button>
+			</form>
+			<a href="pokemon/<%=i %>/edit">EDIT</a>
+			</div>
 		<% }%>
 	</ul>
 

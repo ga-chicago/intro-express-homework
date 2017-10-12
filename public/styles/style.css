@@ -1,4 +1,15 @@
+@font-face {
+  font-family: 'pokemon';
+  src: url("../fonts/pokemonsolid.ttf") format("truetype");
+}
 body {
-  background-color: blue;
-  color: red;
+  background-color: steelblue;
+  color: yellow;
+  font-family: 'pokemon';
+  display: table;
+  margin: auto;
+  vertical-align: middle;
+}
+#break {
+  margin-bottom: 20px;
 }
