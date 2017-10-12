@@ -8,19 +8,12 @@
 See all the Pokemon!
 </h1>
 	<ul>
-		<a href='./0'><li><%= pocket[0].name %></li></a>
-		<a href='./1'><li><%= pocket[1].name %></li></a>
-		<a href='./2'><li><%= pocket[2].name %></li></a>
-		<a href='./3'><li><%= pocket[3].name %></li></a>
-		<a href='./4'><li><%= pocket[4].name %></li></a>
-		<a href='./5'><li><%= pocket[5].name %></li></a>
+		<% for(let i = 0; i < pocket.length; i++){ %>
+			<li>
+				<a href='/pokemon/<%= i %>'> <%= pocket[i].name %> </a>
+			</li>
+		<% } %>
 	</ul>
-<style type="text/css">
-body {
-  color:red;
-  background-color:green;
-  font-family: 'Orbitron', sans-serif;
-}
-</style>
+<script src="/scripts/app.js"></script>
 </body>
 </html>
