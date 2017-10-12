@@ -10,23 +10,10 @@
 	<h1>See All The Pokemon!</h1>
 
 	<ul>
-		<% allPokemon.forEach((item) => { %>
+		<% allPokemon.forEach((item, i) => { %>
 			<li><%= item.name %></li>
-			<% if (item.name === "Bulbasaur") { %>
-				<a href="/pokemon/0">Click</a>
-			<% } else if (item.name === "Ivysaur") { %>
-				<a href="/pokemon/1">Click</a>
-			<% } else if (item.name === "Venusaur") { %>
-				<a href="/pokemon/2">Click</a>
-			<% } else if (item.name === "Charmander") { %>
-				<a href="/pokemon/3">Click</a>
-			<% } else if (item.name === "Charizard") { %>
-				<a href="/pokemon/4">Click</a>
-			<% } else if (item.name === "Squirtle") { %>
-				<a href="/pokemon/5">Click</a>
-			<% } else if (item.name === "Wartortle") { %>
-				<a href="/pokemon/6">Click</a>
-			<% } %>
+			<a href=<%="/pokemon/" + i%>>Click</a>
+			<% i++ %>
 		<% }) %>
 	</ul>
 

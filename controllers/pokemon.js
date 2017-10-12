@@ -10,8 +10,28 @@ router.get('/', (req, res) => {
 
 
 
+router.get('/new', (req, res) => {
+	res.render('new', {});
+})
+
+
+
 router.get('/:index', (req, res) => {
 	res.render('show', { allPokemon: pokemon[req.params.index] });
+})
+
+
+
+router.post('/create', (req, res) => {
+	console.log(req.body);
+
+	if (req.body.placement === 'on') {
+		req.body.placement = req.body.length;
+	}
+
+	pokemon.push(req.body);
+	
+	res.redirect('/pokemon');
 })
 
 
