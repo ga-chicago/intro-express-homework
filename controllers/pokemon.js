@@ -2,12 +2,12 @@ const express = require('express');
 const router = express.Router();
 const pokemon = require('../models/pokemon')
 router.get("/new", (req, res) => {
-res.render('new',{});
+	res.render('new',{});
 })
 
 router.post("/new", (req, res) => {
-console.log(req.body);
-pokemon.push(req.body);
+	console.log(req.body);
+	pokemon.push(req.body);
 res.redirect('/pokemon');
 })
 
