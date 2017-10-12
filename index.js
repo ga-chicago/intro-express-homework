@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
+const methodOverride = require('method-override');
 
 // require controller
 const pokemonController = require('./controllers/pokemon');
@@ -15,6 +16,8 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 // link to public folder assets
 app.use(express.static('public'));
+
+app.use(methodOverride('_method'));
 
 // use our pokemon controller
 app.use('/', pokemonController)

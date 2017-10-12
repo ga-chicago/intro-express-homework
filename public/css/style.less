@@ -1,9 +1,37 @@
 @color: maroon;
 @background: steelblue;
+@hover: salmon;
+@edit: blanchedalmond;
 
 body{
 	background-color: @background;
 	color: @color;
 	font-family: 'Fascinate Inline', cursive;
+	text-align: center;
+	font-size: 28px;
 }
 
+ul{
+	list-style-type: none;
+}
+
+li{
+	font-size: 22px;
+}
+
+a{
+	color: @color;
+	text-decoration: none;
+}
+
+a:hover{
+		color: @hover;
+}
+#create{
+	font-size: 30px;
+}
+
+#edit{
+	font-size: 20px;
+	color: @edit;
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<% include ../views/partials/head.ejs %>
+</head>
+<body>
+	<h1 class="blink_me">Edit Pokemon Page</h1>
+	<form action="/pokemon/<%= index %>/edit?_method=PUT" method="POST">
+		Name: <input type="text" name="name" value="<%= pokemon.name%>">
+		Image: <input type="text" name="img" value="<%= pokemon.img%>">
+		<button type="submit">Submit</button>
+	</form>
+
+	<h3><a href="/pokemon">Back</a></h3>
+</body>
+</html>
