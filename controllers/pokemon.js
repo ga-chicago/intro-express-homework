@@ -45,6 +45,13 @@ router.put('/pokemon/:index/edit', (req,res)=>{
 	res.redirect('/pokemon')
 })
 
+router.delete('/pokemon/:index', (req, res)=>{
+
+	pokemon.splice(req.params.index, 1);
+
+	res.redirect('/pokemon')
+})
+
 
 
 module.exports = router;
