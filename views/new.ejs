@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<% include ./head %>
+</head>
+<body>
+<h1>
+Add to your Pokedex!
+</h1>
+	<form action="/pokemon/create" method="POST">
+		name: <input type="text" name="name">
+		img: <input type="text" name="img">
+		<button type="submit">Submit</button>
+	</form>
+</body>
+</html>

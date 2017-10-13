@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<% include ./head %>
+</head>
+<body>
+<h1>
+See all the Pokemon!
+</h1>
+	<ul id="list">
+		<% for(let i = 0; i < pocket.length; i++){ %>
+			<li>
+				<a href='/pokemon/<%= i %>'> <%= pocket[i].name %> </a> <form action="/pokemon/<%= i %>?_method=DELETE" method="POST">
+					<button type="submit">Delete</button>
+				</form>
+			</li>
+		<% } %>
+	</ul>
+<script src="/scripts/app.js"></script>
+</body>
+</html>
