@@ -1,0 +1,40 @@
+body {
+  background-color: aqua;
+  color: pink;
+  font-family: 'Abril Fatface', cursive;
+}
+h1 {
+  color: #c7a008;
+  margin-left: 40%;
+}
+h2 {
+  margin-left: 46%;
+}
+div {
+  display: flex;
+  justify-content: center;
+}
+ul {
+  margin-left: 45%;
+}
+#add {
+  color: #c7a008;
+  margin-left: 45%;
+}
+#back {
+  margin-left: 49%;
+}
+#button {
+  margin-left: 6%;
+}
+#delete {
+  margin-left: 48.5%;
+}
+#new {
+  color: #c7a008;
+  margin-left: 44%;
+}
+.h1 {
+  color: #c7a008;
+  margin-left: 40%;
+}

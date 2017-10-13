@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=8, IE=9, IE=edge"/>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/styles/style.css">
+
+</head>
+<body>
+
+	<h1>Gotta Catch 'Em All!</h1>
+
+	<h2><%= thisPokemon.name %></h2>
+	<div>
+		<img src="<%= thisPokemon.img %>"></body></br>
+	</div>
+	<form action="/pokemon/<%= index %>?_method=DELETE" method="POST">		
+						<button type="submit" name="Delete" id="delete">Delete</button>
+	</form></br>
+	<a href="/pokemon" id="back">back</a>
+
+
+</body>
+</html>
