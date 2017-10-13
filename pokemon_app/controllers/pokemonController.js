@@ -12,7 +12,23 @@ router.get("/", (req, res) => {
 })
 
 router.get("/:id", (req, res) => {
-	res.render("show", {thisPokemon: pokemon[req.params.id]})
+	index = req.params.id
+	res.render("show", {thisPokemon: pokemon[index]})
 })
+
+router.post("/hatch", (req, res) => {
+
+	console.log(`http://img.pokemondb.net/artwork/${req.body.name.toLowerCase()}.jpg`)
+	pokemon.push({
+		name: req.body.name,
+		img: `http://img.pokemondb.net/artwork/${req.body.name.toLowerCase()}.jpg`
+	})
+	res.redirect("/pokemon")
+});
+
+router.delete("/:index", (req, res) => {			
+			pokemon.splice(req.params.index, 1)		
+			res.redirect("/pokemon")
+		})
 
 module.exports = router

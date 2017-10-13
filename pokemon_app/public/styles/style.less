@@ -1,9 +1,62 @@
-@background-color: Pink;
-@color: aqua;
+@background-color: aqua;
+@textColor: pink;
 @font-family: 'Abril Fatface', cursive;
+@marginBackLink: 49%;
+@marginH1: 40%;
+@marginH2: 46%;
+@marginUl: 45%;
+@marginAdd: 45%;
+@marginNew: 44%;
+@marginButton: 6%;
+@marginDelete: 48.5%;
+@flex: flex;
+@align: center;
+@yellow: #c7a008;
 
-body{
+body {
 			background-color: @background-color;
-			color: @color;
+			color: @textColor;
 			font-family: @font-family;
 		}
+h1{
+			.h1;
+}
+
+h2{
+			margin-left: @marginH2;
+}
+
+div {
+			display: @flex;
+			justify-content: @align;
+
+}
+ul {
+			margin-left: @marginUl;
+}
+#add{
+			color: @yellow;
+			margin-left: @marginAdd;
+}
+
+#back {
+			margin-left: @marginBackLink;
+}
+
+#button {
+			margin-left: @marginButton;
+}
+
+#delete {
+			margin-left: @marginDelete;
+}
+#new{
+			color: @yellow;
+			margin-left: @marginNew;
+}
+
+.h1 {
+	color: @yellow;
+	margin-left: @marginH1;
+
+}

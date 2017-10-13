@@ -12,9 +12,15 @@
 
 	<ul> 
 		<% for (let i=0; i < pokemon.length; i++) { %>
-			<li><a href= "/pokemon/<%= i %>" > <%= pokemon[i].name %><a></li>
+			<li><a href= "/pokemon/<%= i %>"> <%= pokemon[i].name %><a></li>
 		<% } %>
-	</ul>
+	</ul></br>
+
+		<h3 id="add">Add New Pokemon<h3>
+		<form action="/pokemon/hatch" method="POST" id="new">
+			Name: <input type="text" name="name"><br><br>
+			<button type="submit" id="button">Submit</button>
+		</form>
 
 
 	<script src="/javascripts/app.js"></script>
