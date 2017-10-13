@@ -1,0 +1,27 @@
+{
+  "name": "intro-express-homework",
+  "version": "1.0.0",
+  "description": "# POKE EXPRESS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssheehan1210/intro-express-homework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ssheehan1210/intro-express-homework/issues"
+  },
+  "homepage": "https://github.com/ssheehan1210/intro-express-homework#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.2",
+    "method-override": "^2.3.10"
+  }
+}

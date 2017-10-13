@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+	<h1>See All The Pokemon!</h1>
+
+	<ul>
+		<% allPokemon.forEach((item, i) => { %>
+			<li><%= item.name %></li>
+			<% if (item.placement === true) { %>
+				Currently on Team<br>
+			<% } %>
+			<a href=<%="/pokemon/" + i%>>Click</a>
+			<% i++ %>
+			<form action="/pokemon/<%= i %>?_method=DELETE" method="POST">
+				<button type="submit">Release Pokemon</button>
+			</form>
+		<% }) %>
+	</ul>
+
+	<script src="/javascripts/app.js"></script>
+</body>
+</html>
