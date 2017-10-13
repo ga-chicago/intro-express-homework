@@ -1,7 +1,32 @@
-@growlithe: orange;
+@growlithe: saturate(hsl(20, 75%, 25%), 50%);
+// @starpurple: desaturate(hsl(300, 100%, 25%), 40%);
+// @starred: red;
+// @staryellow: yellow;
+@starmie: svg-gradient(ellipse at center, lighten(hsl(0, 100%, 50%), 12%), yellow 15%, desaturate(hsl(300, 100%, 25%), 65%) 50%);
 
 body {
-	background-color: @growlithe;
-	color: purple;
-	font-family: 'Orbitron', serif
+	background-image: @starmie;
+	color: green;
+	font-family: 'Orbitron', serif;
+	text-align: center;
+}
+
+h1 {
+	font-size: 60px;
+	padding-bottom: 40px;
+	text-align: right;
+}
+
+ul#list {
+	list-style: none;
+	li {
+		padding-bottom: 10px;
+	}
+	a {
+		color: brown;
+	}
+}
+
+img {
+	padding-bottom: 15px;
 }

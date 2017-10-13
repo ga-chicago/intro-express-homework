@@ -1,5 +1,23 @@
 body {
-  background-color: orange;
-  color: purple;
+  background-image: url('data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20viewBox%3D%220%200%201%201%22%20preserveAspectRatio%3D%22none%22%3E%3CradialGradient%20id%3D%22gradient%22%20gradientUnits%3D%22userSpaceOnUse%22%20cx%3D%2250%25%22%20cy%3D%2250%25%22%20r%3D%2275%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23ff3d3d%22%2F%3E%3Cstop%20offset%3D%2215%25%22%20stop-color%3D%22%23ffff00%22%2F%3E%3Cstop%20offset%3D%2250%25%22%20stop-color%3D%22%23562956%22%2F%3E%3C%2FradialGradient%3E%3Crect%20x%3D%22-50%22%20y%3D%22-50%22%20width%3D%22101%22%20height%3D%22101%22%20fill%3D%22url(%23gradient)%22%20%2F%3E%3C%2Fsvg%3E');
+  color: green;
   font-family: 'Orbitron', serif;
+  text-align: center;
+}
+h1 {
+  font-size: 60px;
+  padding-bottom: 40px;
+  text-align: right;
+}
+ul#list {
+  list-style: none;
+}
+ul#list li {
+  padding-bottom: 10px;
+}
+ul#list a {
+  color: brown;
+}
+img {
+  padding-bottom: 15px;
 }
